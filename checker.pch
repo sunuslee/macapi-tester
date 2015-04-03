@@ -1,0 +1,56 @@
+//
+//  checker.pch
+//  apitest-mac
+//
+//  Created by Sunus on 2/4/15.
+//  Copyright (c) 2015 alibaba. All rights reserved.
+//
+
+#ifndef apitest_mac_checker_pch
+#define apitest_mac_checker_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*
+#ifdef __OBJC__
+#import <Foundation/NSObjCRuntime.h>
+#if MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_6
+    #undef  AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER
+
+#ifdef __clang__
+
+#define AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER __attribute__((weak_import,deprecated("API is newer than Deployment Target.")))
+#else
+#define AVAILABLE_MAC_OS_X_VERSION_10_7_AND_LATER __attribute__((weak_import,deprecated))
+#endif
+#endif
+#undef  NS_CLASS_AVAILABLE
+#define NS_CLASS_AVAILABLE(_mac, _ios) AVAILABLE_MAC_OS_X_VERSION_##_mac##_AND_LATER
+
+#import <Cocoa/Cocoa.h>
+#endif
+ */
+#ifdef __OBJC__
+    #import <Foundation/NSObjCRuntime.h>
+    //MAC_OS_X_VERSION_MIN_REQUIRED
+    //MAC_OS_X_VERSION_10_7
+    #if MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_9
+        #undef  AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER
+        #ifdef __clang__
+            #define AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER __attribute__((weak_import,deprecated("API is newer than Deployment Target.")))
+        #else
+            #define AVAILABLE_MAC_OS_X_VERSION_10_9_AND_LATER __attribute__((weak_import,deprecated))
+        #endif
+    #endif
+    #undef  NS_CLASS_AVAILABLE
+    #undef NS_AVAILABLE_MAC
+    #define NS_AVAILABLE_MAC(_mac) AVAILABLE_MAC_OS_X_VERSION_##_mac##_AND_LATER
+    #define NS_CLASS_AVAILABLE(_mac, _ios) AVAILABLE_MAC_OS_X_VERSION_##_mac##_AND_LATER
+    #undef NS_DEPRECATED_MAC
+    #define NS_DEPRECATED_MAC asd
+    #import <Cocoa/Cocoa.h>
+    #import <AppKit/AppKit.h>
+    #import <AppKit/NSWindow.h>
+#endif
+
+#endif

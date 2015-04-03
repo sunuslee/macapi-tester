@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68512AAC-159D-4984-84A0-AC96F96D861C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>apitest-mac</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBA5A26740BFC3BB959875EC0A3AD2E7C0747301</key>
+		<string>github.com:sunuslee/macapi-tester.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>apitest-mac.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBA5A26740BFC3BB959875EC0A3AD2E7C0747301</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:sunuslee/macapi-tester.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBA5A26740BFC3BB959875EC0A3AD2E7C0747301</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBA5A26740BFC3BB959875EC0A3AD2E7C0747301</string>
+			<key>IDESourceControlWCCName</key>
+			<string>macapi-tester</string>
+		</dict>
+	</array>
+</dict>
+</plist>
